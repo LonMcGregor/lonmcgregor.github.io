@@ -1,1 +1,115 @@
-body { margin: 0; }
+@import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono|Open+Sans:400italic,400&subset=latin,latin-ext);
+
+body { 
+	margin: 0; 
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+#sidebar {
+	width: 310px;
+    height: 100%;
+    float: left;
+    min-height: 800px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#sidebar .sideBox {
+	background: #83A1D6;
+}
+
+#sidebar header {
+	max-height: 160px;
+}
+#sidebar header img {
+	height: 50px;
+	width: 50px;
+    margin: 0 auto;
+}
+#sidebar header h1 {
+	
+}
+
+
+
+#sideNavigator {
+	background: #ABBCD6;
+    overflow-y: hidden;
+}
+#sideNavigator form {
+	
+}
+#sideNavigator form input {
+	
+}
+
+#siteList {
+    height: 20%;
+    overflow-y: scroll;
+}
+#siteList ul {
+	list-style: none;
+}
+#siteList ul li {
+    margin-top: 10px;
+}
+
+
+
+#sidebar footer {
+    max-height: 140px;
+}
+#sidebar footer h2 {
+	
+}
+#sidebar footer p {
+	font-size: 70%;
+}
+
+
+
+
+/* ---------------
+------ Content ---
+----------------*/
+
+#content {
+    float: right;
+    width: calc(100% - 440px);
+    padding: 50px;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+#content article {
+	color: #222222;
+}
+
+#content article header {
+    margin: 20px;
+}
+#content article header h1 {
+    font-size: 200%;
+}
+#content article header h2 {
+    font-size: 150%;
+}
+
+#content article p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#content article p.code {
+	font-family: 'Ubuntu Mono', monospace;
+	padding: 20px;
+	background: #D5E8D4;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#content footer {
+	font-size: 90%;
+}
+#content footer time {
+	font-style: italic;
+}

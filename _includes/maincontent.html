@@ -1,0 +1,10 @@
+<div id="content">
+    <article>
+        <header>
+            <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+            {% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+        </header>
+        <p></p>
+        {{ content }}
+  </article>
+</div>

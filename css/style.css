@@ -64,6 +64,9 @@ ul#siteList ul{
 ul#siteList li {
     margin-top: 10px;
 }
+ul#siteList li a, ul#siteList li a:link, ul#siteList li a:hover  {
+    color: white;
+}
 
 
 
@@ -108,12 +111,12 @@ ul#siteList li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#content article p.code {
+
+code {
 	font-family: 'Ubuntu Mono', monospace;
-	padding: 20px;
+}
+.highlight {
 	background: #D5E8D4;
-    margin-left: 40px;
-    margin-right: 40px;
 }
 
 #content footer {

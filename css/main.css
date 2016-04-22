@@ -10,6 +10,13 @@ body {
     font-family: 'DejaVu Sans Mono', monospace;
 }
 
+#bgCanvas {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
 .centre {
 	margin: 0 auto;
 }

@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', 'DejaVu Sans Mono', monospace;
 }
 
 body {
@@ -7,85 +8,71 @@ body {
     margin: 0;
     background: #000011;
     color: #eeeeee;
-    font-family: 'DejaVu Sans Mono', monospace;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    min-height: 100vh;
 }
 
-#bgCanvas {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	z-index: 2;
-}
-
-.centre {
-	margin: 0 auto;
-}
-
-.main {
-	width: 80%;
-	height: 100%;
-	box-shadow: inset 0px 0px 1px 1px #acdc23;
-}
-
-@media screen and (max-width:800px) {
-	.main {
-		width: 100%;
-	}
-}
-
-.grid {
-	display: grid;
-}
-
-.item{
-	box-shadow: inset 0px 0px 1px 1px #eeeeee;
-	width: 25%;
-	height: 25vh;
-	float: left;
-	position: relative;
-}
-
-.wide.item {
-	width: 50%;
+body > nav {
+    max-width: 500px;
+    border-right: 1px solid #eeeeee;
+    margin-right: 4em;
 }
 
 .title {
-	box-shadow: inset 0px 0px 1px 1px #eeeeee;
-	
+    font-size: 4em;
 }
 
-.pos0 {
-	left: 0;
+a, a:link {
+    color: #fff;
+    text-decoration: none;
 }
-.pos1 {
-	left: 25%;
-}
-.pos2 {
-	left: 50%;
-}
-.pos3 {
-	left: 75%;
+a:hover {
+    text-decoration: underline;
 }
 
-@media screen and (max-width: 400px){
-	.grid, .row {
-		display: flex;
-		flex-direction: column;
-	}
-	
-	.first {
-		order: 0;
-	}
-	
-	.next {
-		order: 1;
-	}
-	
-	.item, .item.wide{
-		width: 100%;
-	}
-	
-	[class*=pos] {
-		left: 0;
-	}
+body > nav > ul > li {
+    position: relative;
+    transition: left 0.1s ease-in-out;
+    padding: 2px;
+}
+
+body > nav > ul > li:hover {
+    left: 10px;
+}
+
+body > article {
+    min-width: 500px;
+}
+
+figure, figure img, figure figcaption {
+    text-align: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    body > nav {
+        border-right: none;
+        margin-right: 0px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body > nav {
+        max-width: 100%;
+    }
+    body > article {
+        min-width: 100%;
+    }
 }

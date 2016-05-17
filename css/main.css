@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu Mono', 'DejaVu Sans Mono', monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #27272d;
+    color: #d6d6d6;
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+body > nav {
+    min-width: 350px;
+    border-right: 1px solid #eeeeee;
+    margin-right: 4em;
+}
+
+#navstuff {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    overflow-y: auto;
+    padding-right: 1em;
+}
+
+.title {
+    font-size: 4em;
+}
+
+a, a:link {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body > nav > ul > li {
+    position: relative;
+    transition: left 0.1s ease-in-out;
+    padding: 2px;
+}
+
+body > nav > ul > li:hover {
+    left: 10px;
+}
+
+body > article {
+    min-width: 500px;
+}
+
+figure, figure img, figure figcaption {
+    text-align: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    body > nav {
+        border-right: none;
+        margin-right: 0px;
+        border-bottom: 1px solid #eeeeee;
+        margin-bottom: 4em;
+    }
+    #navstuff {
+        position: relative;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body > nav {
+        max-width: 100%;
+    }
+    body > article {
+        min-width: 100%;
+    }
+}

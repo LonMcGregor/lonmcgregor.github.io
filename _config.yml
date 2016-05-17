@@ -1,0 +1,12 @@
+# Site settings
+title: uk.lonm.*
+email: lonmcgregor@outlook.com
+description: > # this means to ignore newlines until "baseurl:"
+  Site for public hosting of LonMcGregor's various github projects
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://lonm.uk" # the base hostname & protocol for your site
+twitter_username: lonmcgregor
+github_username:  lonmcgregor
+
+# Build settings
+markdown: kramdown

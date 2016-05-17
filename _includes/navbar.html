@@ -1,0 +1,11 @@
+<nav>
+    <div id="navstuff">
+        <a href="/" class="title">uk.lonm.*</a>
+        <ul>
+            {% for post in site.posts %}
+                <a href="{{ post.url | prepend: site.baseurl }}"><li>{{ post.title }}</li></a>
+            {% endfor %}
+        </ul>
+        <footer>By <a href="https://github.com/LonMcGregor/lonmcgregor.github.io">LonMcGregor</a></footer>
+    </div>
+</nav>

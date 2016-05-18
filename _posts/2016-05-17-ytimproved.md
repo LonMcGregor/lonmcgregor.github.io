@@ -3,8 +3,9 @@ layout: default
 title:  YTImproved
 subtitle: A WebExtension for YouTube
 date:   2016-05-17 16:39
+repo: https://github.com/LonMcGregor/YTImproved
 ---
-The YTImproved extension, found at <a href="https://github.com/LonMcGregor/YTImproved">Github</a> is a webextension that adds various improvements to youtube.
+The YTImproved extension is a webextension that adds various improvements to youtube.
 
 Mostly it does this by removing a lot of stuff, such as the toxic comments section.
 

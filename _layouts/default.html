@@ -3,7 +3,7 @@
     {% include navbar.html %}
     <article>
         <h1>{{ page.title }}</h1>
-        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+        <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.repo %} • <a href="{{ page.repo }}">Repo on Github</a>{% endif %}
         <section>
         <h2>{{ page.subtitle }}</h2>
         {{ content }}

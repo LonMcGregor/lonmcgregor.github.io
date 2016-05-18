@@ -29,7 +29,7 @@ This tool adds a data bar similar in style to that used in windows 8's charms me
 <h3>Window Switcher Hot Corner</h3>
 NOTE: Optimized for Windows 8.1
 <br />
-At <a href="https://github.com/LonMcGregor/RainmeterStartButton">This Repo</a>
+At <a href="https://github.com/LonMcGregor/RainmeterWindowSwitcher">This Repo</a>
 <p />
 This adds a 'hot corner' pixel that lets you qickly switch through your windows, as you would via alt-tabbing.
 
@@ -37,6 +37,6 @@ This adds a 'hot corner' pixel that lets you qickly switch through your windows,
 <h3>Start Screen Hot Corner</h3>
 NOTE: Optimized for Windows 8.1
 <br />
-At <a href="https://github.com/LonMcGregor/RainmeterWindowSwitcher">This Repo</a>
+At <a href="https://github.com/LonMcGregor/RainmeterStartButton">This Repo</a>
 <p />
 This adds a 'hot corner' pixel that will quickly open the start screen.
